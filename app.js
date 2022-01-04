@@ -66,7 +66,9 @@ function handleKey(e) {
 // Clear/shake function
 function clearCanvas() {
   canvasWr.classList.add('shake');
-  ctx.clearRect(0, 0, width, height);
+  setTimeout(() => {
+    ctx.clearRect(0, 0, width, height)
+  }, 1000);
   canvasWr.addEventListener('animationend', function() {
     canvasWr.classList.remove('shake');
   }, { once: true })
