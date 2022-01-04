@@ -2,7 +2,7 @@
 const canvas = document.querySelector('#etch-a-sketch');
 const ctx = canvas.getContext('2d');
 const shakeButton = document.querySelector('.shake');
-const moveAmount = 25;
+const moveAmount = 10;
 // Setup HTML canvas for drawing
 const { width, height } = canvas;
 
@@ -17,7 +17,7 @@ ctx.lineWidth = 10;
 let hue = 0
 
 // ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
-ctx.strokeStyle = `black`;
+ctx.strokeStyle = `dimgray`;
 
 ctx.beginPath(); // Start drawing
 ctx.moveTo(x, y);
@@ -72,6 +72,6 @@ function clearCanvas() {
 }
 
 
-//listen for arrow keys
+// Listen for arrow keys
 window.addEventListener('keydown', handleKey);
 shakeButton.addEventListener('click', clearCanvas);
