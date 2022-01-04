@@ -3,6 +3,7 @@ const canvas = document.querySelector('#etch-a-sketch');
 const ctx = canvas.getContext('2d');
 const shakeButton = document.querySelector('.shake');
 const moveAmount = 10;
+const canvasWr = document.querySelector('#canvasWr'); 
 // Setup HTML canvas for drawing
 const { width, height } = canvas;
 
@@ -64,10 +65,10 @@ function handleKey(e) {
 }
 // Clear/shake function
 function clearCanvas() {
-  canvas.classList.add('shake');
+  canvasWr.classList.add('shake');
   ctx.clearRect(0, 0, width, height);
-  canvas.addEventListener('animationend', function() {
-    canvas.classList.remove('shake');
+  canvasWr.addEventListener('animationend', function() {
+    canvasWr.classList.remove('shake');
   }, { once: true })
 }
 
