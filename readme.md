@@ -7,3 +7,5 @@ I’m working on a web app that requires the use of HTML Canvas and this was a g
 
 •Uses Canvas API to draw and render lines how an Etch-A-Sketch pad would.<br>
 •I made the design for this site using Adobe Photoshop and CSS.
+
+![](images/screenshot.png)
