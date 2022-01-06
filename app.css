@@ -40,15 +40,20 @@ canvas {
   background: radial-gradient(circle, rgba(245,245,246,1) 0%, rgba(151,151,157,0.9920634920634921) 100%);
 }
 
-h2 {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  font-family: 'VT323', monospace ;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
-.buttons {
-  /* padding-top: 50px; */
+h2 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'VT323', monospace ;
+  margin: 10px 0 10px 0;
 }
 
 .btn {
