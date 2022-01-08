@@ -29,15 +29,18 @@ canvas {
   position: relative;
   /* border: 50px solid #e80000; */
   border-radius: 30px;
-  box-shadow: 
-    inset 0 5px 10px black;
+  box-shadow: inset 0 5px 10px black;
   /* Set the width and height to half the actual size so it doesn't look pixelated */
   width: 650px;
   height: 460px;
   margin-top: -20px;
   /* background: white; */
-  background: rgb(245,245,246);
-  background: radial-gradient(circle, rgba(245,245,246,1) 0%, rgba(151,151,157,0.9920634920634921) 100%);
+  background: rgb(245, 245, 246);
+  background: radial-gradient(
+    circle,
+    rgba(245, 245, 246, 1) 0%,
+    rgba(151, 151, 157, 0.9920634920634921) 100%
+  );
 }
 
 .container {
@@ -45,37 +48,37 @@ canvas {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  z-index: 1;
 }
 
 h2 {
   color: white;
   font-size: 4rem;
   text-align: center;
-  font-family: 'VT323', monospace ;
+  font-family: 'VT323', monospace;
   margin: 10px 0 10px 0;
 }
 
 .btn {
   background: #881400;
-	color: white;
-  font-family: 'VT323', monospace ;
-	border-bottom: 6px inset rgba(0,0,0,.5);
-	border-left: 6px inset rgba(0,0,0,.5);
-	border-right: 6px inset rgba(255,255,255,.5);
-	border-top: 6px inset rgba(255,255,255,.5);
-	box-sizing: border-box;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 2.2rem;
-	min-width: 200px;
-	padding: .5rem;
-	width: auto;
+  color: white;
+  font-family: 'VT323', monospace;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  width: auto;
 }
 
 .btn:hover {
-  background: #BCBCBC;
-  background: #A81000
+  background: #bcbcbc;
+  background: #a81000;
 }
 
 #canvasWr.shake {
@@ -114,9 +117,9 @@ h2 {
 }
 @keyframes fadeOut {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   100% {
-    opacity:0;
+    opacity: 0;
   }
 }
