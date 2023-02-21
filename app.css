@@ -6,7 +6,7 @@ body {
   align-items: center;
   justify-items: center;
   background: white;
-  background: url(http://cdn.shopify.com/s/files/1/0791/1095/products/IMG_8892.JPG?v=1455579798);
+  background: url("./images/felt.jpeg");
   background-size: contain;
 }
 
